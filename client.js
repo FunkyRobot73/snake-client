@@ -16,13 +16,13 @@ const connect = function () {
     console.log(`${name} is connected! 🔥`);
     conn.write(`Name: CAR`);
     
-    setTimeout(() => {
-      //conn.write(`Move: right`);
-    }, 100);
+    // setTimeout(() => {
+    //   //conn.write(`Move: right`);
+    // }, 100);
 
-    setInterval(() => {
-     // conn.write(`Move: up`);
-    }, 50);
+    // setInterval(() => {
+    //  // conn.write(`Move: up`);
+    // }, 50);
 
     
   });
@@ -34,7 +34,12 @@ const connect = function () {
   
   conn.on("data", () => {
     
-    console.log(`${name} is idled out! 🗯️`);
+    console.log(`${name} has idled out! 💤`);
+  });
+
+  conn.on("close", () => {
+    
+    console.log(`${name} you have exited the game. 🏁`);
   });
   
   
