@@ -1,12 +1,13 @@
 const net = require("net");
-//connect = required("connect");
+const { IP, PORT } = require("./constants");
+
 let connection;
 
 const connect = function () {
   const name = 'Carlos 🐷:';
   const conn = net.createConnection({
-    host: "165.227.47.243", // IP address here,
-    port: 50541 // PORT number here,
+    host: IP, // IP address here,
+    port: PORT // PORT number here,
   });
   
   // interpret incoming data as text

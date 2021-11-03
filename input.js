@@ -24,6 +24,21 @@ const handleUserInput = function (keyStroke) {
     connection.write(`Move: right`);
   }
 
+  if (keyStroke === 'p') {
+    //process.exit();
+    connection.write(`Say: Chomp`);
+  }
+
+  if (keyStroke === 'o') {
+    //process.exit();
+    connection.write(`Say: Burp!`);
+  }
+
+  if (keyStroke === 'i') {
+    //process.exit();
+    connection.write(`Say: Boom!`);
+  }
+
 };
 
 
