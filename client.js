@@ -1,5 +1,6 @@
 const net = require("net");
 //connect = required("connect");
+let connection;
 
 const connect = function () {
   const name = 'Carlos 🐷:';
